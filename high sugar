@@ -1,0 +1,10 @@
+-- 5 candies with the highest sugar percent
+SELECT
+	competitor_name,
+	ROUND(sugar_percent, 2) AS _sugar_percent
+FROM
+	candy_data
+ORDER BY
+	sugar_percent DESC
+LIMIT
+	5;

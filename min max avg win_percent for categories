@@ -1,0 +1,89 @@
+SELECT
+	'chocolate' AS category,
+	MIN(win_percent) AS min_win,
+	MAX(win_percent) AS max_win,
+	AVG(win_percent) AS avg_win
+FROM
+	public.candy_data
+WHERE
+	chocolate = TRUE
+UNION ALL
+SELECT
+	'fruity' AS category,
+	MIN(win_percent) AS min_win,
+	MAX(win_percent) AS max_win,
+	AVG(win_percent) AS avg_win
+FROM
+	public.candy_data
+WHERE
+	fruity = TRUE
+UNION ALL
+SELECT
+	'caramel' AS category,
+	MIN(win_percent) AS min_win,
+	MAX(win_percent) AS max_win,
+	AVG(win_percent) AS avg_win
+FROM
+	public.candy_data
+WHERE
+	caramel = TRUE
+UNION ALL
+SELECT
+	'peanut_almondy' AS category,
+	MIN(win_percent) AS min_win,
+	MAX(win_percent) AS max_win,
+	AVG(win_percent) AS avg_win
+FROM
+	public.candy_data
+WHERE
+	peanut_almondy = TRUE
+UNION ALL
+SELECT
+	'nougat' AS category,
+	MIN(win_percent) AS min_win,
+	MAX(win_percent) AS max_win,
+	AVG(win_percent) AS avg_win
+FROM
+	public.candy_data
+WHERE
+	nougat = TRUE
+UNION ALL
+SELECT
+	'crisped_rice_wafer' AS category,
+	MIN(win_percent) AS min_win,
+	MAX(win_percent) AS max_win,
+	AVG(win_percent) AS avg_win
+FROM
+	public.candy_data
+WHERE
+	crisped_rice_wafer = TRUE
+UNION ALL
+SELECT
+	'hard' AS category,
+	MIN(win_percent) AS min_win,
+	MAX(win_percent) AS max_win,
+	AVG(win_percent) AS avg_win
+FROM
+	public.candy_data
+WHERE
+	hard = TRUE
+UNION ALL
+SELECT
+	'bar' AS category,
+	MIN(win_percent) AS min_win,
+	MAX(win_percent) AS max_win,
+	AVG(win_percent) AS avg_win
+FROM
+	public.candy_data
+WHERE
+	bar = TRUE
+UNION ALL
+SELECT
+	'pluribus' AS category,
+	MIN(win_percent) AS min_win,
+	MAX(win_percent) AS max_win,
+	AVG(win_percent) AS avg_win
+FROM
+	public.candy_data
+WHERE
+	pluribus = TRUE;

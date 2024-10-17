@@ -1,0 +1,9 @@
+SELECT
+	competitor_name,
+	win_percent
+FROM
+	candy_data
+ORDER BY
+	win_percent ASC
+LIMIT
+	5;

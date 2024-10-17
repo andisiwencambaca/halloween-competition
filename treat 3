@@ -1,0 +1,21 @@
+-- selection of treat 3
+SELECT
+	competitor_name,
+	fruity,
+	caramel,
+	peanut_almondy,
+	nougat,
+	crisped_rice_wafer,
+	hard,
+	bar,
+	win_percent
+FROM
+	candy_data
+WHERE
+	fruity = TRUE
+	and chocolate = false
+	and peanut_almondy = false
+ORDER BY
+	win_percent DESC
+LIMIT
+	5;

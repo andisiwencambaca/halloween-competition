@@ -1,0 +1,6 @@
+--selection of treat 1 and treat 2
+
+select competitor_name, chocolate, caramel, peanut_almondy,nougat, crisped_rice_wafer, hard, bar, win_percent
+from candy_data
+order by win_percent DESC
+limit 5;

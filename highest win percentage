@@ -1,0 +1,10 @@
+-- candy name by highest win_percent
+SELECT
+	competitor_name,
+	ROUND(win_percent, 2) AS win_percent
+FROM
+	candy_data
+ORDER BY
+	win_percent DESC
+LIMIT
+	5;

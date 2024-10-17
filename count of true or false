@@ -1,0 +1,30 @@
+-- counting the number of TRUE and FALSE values for each boolean column: 
+-- (chocolate, fruity, caramel, peanut_almondy, nougat, crisped_rice_wafer, hard, bar, pluribus)  
+
+SELECT 
+    'TRUE' AS boolean_value,
+    SUM(CASE WHEN chocolate = true THEN 1 ELSE 0 END) AS chocolate,
+    SUM(CASE WHEN fruity = true THEN 1 ELSE 0 END) AS fruity,
+    SUM(CASE WHEN caramel = true THEN 1 ELSE 0 END) AS caramel,
+    SUM(CASE WHEN peanut_almondy = true THEN 1 ELSE 0 END) AS peanut_almondy,
+    SUM(CASE WHEN nougat = true THEN 1 ELSE 0 END) AS nougat,
+    SUM(CASE WHEN crisped_rice_wafer = true THEN 1 ELSE 0 END) AS crisped_rice_wafer,
+    SUM(CASE WHEN hard = true THEN 1 ELSE 0 END) AS hard,
+    SUM(CASE WHEN bar = true THEN 1 ELSE 0 END) AS bar,
+    SUM(CASE WHEN pluribus = true THEN 1 ELSE 0 END) AS pluribus
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'FALSE' AS boolean_value,
+    SUM(CASE WHEN chocolate = false THEN 1 ELSE 0 END) AS chocolate,
+    SUM(CASE WHEN fruity = false THEN 1 ELSE 0 END) AS fruity,
+    SUM(CASE WHEN caramel = false THEN 1 ELSE 0 END) AS caramel,
+    SUM(CASE WHEN peanut_almondy = false THEN 1 ELSE 0 END) AS peanut_almondy,
+    SUM(CASE WHEN nougat = false THEN 1 ELSE 0 END) AS nougat,
+    SUM(CASE WHEN crisped_rice_wafer = false THEN 1 ELSE 0 END) AS crisped_rice_wafer,
+    SUM(CASE WHEN hard = false THEN 1 ELSE 0 END) AS hard,
+    SUM(CASE WHEN bar = false THEN 1 ELSE 0 END) AS bar,
+    SUM(CASE WHEN pluribus = false THEN 1 ELSE 0 END) AS pluribus
+FROM candy_data;

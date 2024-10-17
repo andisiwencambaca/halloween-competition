@@ -1,0 +1,25 @@
+-- price buckets
+
+WITH
+	buckets AS (
+		SELECT
+			competitor_name,
+			price_percent,
+			NTILE(3) OVER (
+				ORDER BY
+					price_percent
+			) AS ntile_value -- Divides the data into 3 equal-sized groups
+		FROM
+			candy_data
+	)
+SELECT
+	COUNT(*),
+	CASE
+		WHEN ntile_value = 1 THEN 'Low Price'
+		WHEN ntile_value = 2 THEN 'Medium Price'
+		ELSE 'High Price'
+	END AS price_category
+FROM
+	buckets
+GROUP BY
+	ntile_value

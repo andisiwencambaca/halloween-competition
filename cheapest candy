@@ -1,0 +1,10 @@
+--cheapest candy
+SELECT
+	competitor_name,
+	price_percent
+FROM
+	candy_data
+ORDER BY
+	price_percent ASC
+LIMIT
+	5;

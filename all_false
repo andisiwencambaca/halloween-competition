@@ -1,0 +1,19 @@
+-- which candy has FALSE for all characteristics?
+
+SELECT
+	competitor_name,
+	sugar_percent,
+	price_percent,
+	win_percent
+FROM
+	candy_data
+WHERE
+	chocolate = FALSE
+	AND fruity = FALSE
+	AND caramel = FALSE
+	AND peanut_almondy = FALSE
+	AND nougat = FALSE
+	AND crisped_rice_wafer = FALSE
+	AND hard = FALSE
+	AND bar = FALSE
+	AND pluribus = FALSE;

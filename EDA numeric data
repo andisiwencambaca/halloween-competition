@@ -1,0 +1,25 @@
+--using union all to check and compare the min/max/avg of the numeric columns: win percent, price percent, and sugar percent
+
+SELECT
+	'win_percent' AS category,
+	MIN(win_percent) AS min_value,
+	MAX(win_percent) AS max_value,
+	AVG(win_percent) AS avg_value
+FROM
+	candy_data
+UNION ALL
+SELECT
+	'price_percent' AS category,
+	MIN(price_percent) AS min_value,
+	MAX(price_percent) AS max_value,
+	AVG(price_percent) AS avg_value
+FROM
+	candy_data
+UNION ALL
+SELECT
+	'sugar_percent' AS category,
+	MIN(sugar_percent) AS min_value,
+	MAX(sugar_percent) AS max_value,
+	AVG(sugar_percent) AS avg_value
+FROM
+	candy_data;

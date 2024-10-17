@@ -1,0 +1,10 @@
+--higher priced candy
+SELECT
+	competitor_name,
+	round(price_percent, 2) as price_percent
+FROM
+	candy_data
+ORDER BY
+	price_percent DESC
+LIMIT
+	5;

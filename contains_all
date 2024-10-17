@@ -1,0 +1,16 @@
+-- which candy has TRUE for all characteristics?
+
+SELECT
+	count(*) as contains_all
+FROM
+	candy_data
+WHERE
+	chocolate = TRUE
+	AND fruity = TRUE
+	AND caramel = TRUE
+	AND peanut_almondy = true
+	and nougat = true
+	and crisped_rice_wafer = true
+	and hard = true
+	and bar = TRUE
+	and pluribus = true;

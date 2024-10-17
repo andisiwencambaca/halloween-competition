@@ -1,0 +1,6 @@
+-- standard deviation of sugar, price and win percentage
+SELECT
+    STDDEV(sugar_percent) AS stddev_sugar_percent,
+    STDDEV(price_percent) AS stddev_price_percent,
+    STDDEV(win_percent) AS stddev_win_percent
+FROM candy_data;

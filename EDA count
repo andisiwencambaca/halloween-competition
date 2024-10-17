@@ -1,0 +1,4 @@
+-- confirming that there are indeed 85 types of candy
+
+select count(*)
+from candy_data;

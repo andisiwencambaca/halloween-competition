@@ -1,0 +1,19 @@
+--checking for nulls
+
+SELECT
+    count(*)
+FROM
+    candy_data
+WHERE
+    chocolate IS NULL
+    OR fruity IS NULL
+    OR caramel IS NULL
+    OR peanut_almondy IS NULL
+    OR nougat IS NULL
+    OR crisped_rice_wafer IS NULL
+    OR hard IS NULL
+    OR bar IS NULL
+    OR pluribus IS NULL
+    OR sugar_percent IS NULL
+    OR price_percent IS NULL
+    OR win_percent IS NULL;

@@ -1,0 +1,9 @@
+SELECT
+	competitor_name,
+	sugar_percent
+FROM
+	candy_data
+ORDER BY
+	sugar_percent ASC
+LIMIT
+	5;

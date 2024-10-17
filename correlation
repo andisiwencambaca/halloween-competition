@@ -1,0 +1,7 @@
+--correlation between sugar_percent and price_percent, sugar_percent and win_percent, and price_percent_and win_percent
+
+SELECT 
+    CORR(sugar_percent, price_percent) AS sugar_price_corr,
+    CORR(sugar_percent, win_percent) AS sugar_win_corr,
+    CORR(price_percent, win_percent) AS price_win_corr
+FROM candy_data;

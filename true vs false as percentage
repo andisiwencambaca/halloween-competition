@@ -1,0 +1,141 @@
+SELECT 
+    'chocolate' AS attribute,
+    'TRUE' AS value,
+    ROUND((SUM(CASE WHEN chocolate = TRUE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'chocolate' AS attribute,
+    'FALSE' AS value,
+    ROUND((SUM(CASE WHEN chocolate = FALSE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'fruity' AS attribute,
+    'TRUE' AS value,
+    ROUND((SUM(CASE WHEN fruity = TRUE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'fruity' AS attribute,
+    'FALSE' AS value,
+    ROUND((SUM(CASE WHEN fruity = FALSE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'caramel' AS attribute,
+    'TRUE' AS value,
+    ROUND((SUM(CASE WHEN caramel = TRUE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'caramel' AS attribute,
+    'FALSE' AS value,
+    ROUND((SUM(CASE WHEN caramel = FALSE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'peanut_almondy' AS attribute,
+    'TRUE' AS value,
+    ROUND((SUM(CASE WHEN peanut_almondy = TRUE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'peanut_almondy' AS attribute,
+    'FALSE' AS value,
+    ROUND((SUM(CASE WHEN peanut_almondy = FALSE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'nougat' AS attribute,
+    'TRUE' AS value,
+    ROUND((SUM(CASE WHEN nougat = TRUE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'nougat' AS attribute,
+    'FALSE' AS value,
+    ROUND((SUM(CASE WHEN nougat = FALSE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'crisped_rice_wafer' AS attribute,
+    'TRUE' AS value,
+    ROUND((SUM(CASE WHEN crisped_rice_wafer = TRUE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'crisped_rice_wafer' AS attribute,
+    'FALSE' AS value,
+    ROUND((SUM(CASE WHEN crisped_rice_wafer = FALSE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'hard' AS attribute,
+    'TRUE' AS value,
+    ROUND((SUM(CASE WHEN hard = TRUE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'hard' AS attribute,
+    'FALSE' AS value,
+    ROUND((SUM(CASE WHEN hard = FALSE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'bar' AS attribute,
+    'TRUE' AS value,
+    ROUND((SUM(CASE WHEN bar = TRUE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'bar' AS attribute,
+    'FALSE' AS value,
+    ROUND((SUM(CASE WHEN bar = FALSE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'pluribus' AS attribute,
+    'TRUE' AS value,
+    ROUND((SUM(CASE WHEN pluribus = TRUE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data
+
+UNION ALL
+
+SELECT 
+    'pluribus' AS attribute,
+    'FALSE' AS value,
+    ROUND((SUM(CASE WHEN pluribus = FALSE THEN 1 ELSE 0 END) / 85.0) * 100, 2) AS percent
+FROM candy_data;

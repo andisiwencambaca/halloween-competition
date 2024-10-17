@@ -1,0 +1,14 @@
+--win percent buckets
+
+SELECT
+    COUNT(*) AS num_candies,
+    CASE
+        WHEN win_percent < 20 THEN '0-20%'
+        WHEN win_percent BETWEEN 20 AND 40 THEN '20-40%'
+        WHEN win_percent BETWEEN 40 AND 60 THEN '40-60%'
+        WHEN win_percent BETWEEN 60 AND 80 THEN '60-80%'
+        ELSE '80-100%'
+    END AS win_range
+FROM candy_data
+GROUP BY win_range
+ORDER BY win_range;
